@@ -5,7 +5,9 @@ import React, { useEffect, useState } from 'react';
 import styles from './styles';
 import Login from './assets/components/login';
 import axios from 'axios';
-import Landing from './assets/components/Landing.component';
+import Landing from './assets/components/MemesApp/Landing.component';
+import AppNavigator from './assets/components/DemoApp/AppNavigator';
+import Router from './assets/components/MemesApp/router';
 
 export default function App() {
 	const [image, setImage] = React.useState([]);
@@ -26,7 +28,9 @@ export default function App() {
 	return (
 		<SafeAreaProvider>
 			<SafeAreaView style={styles.container}>
-				<Landing/>
+				{/* <Landing/> */}
+				{/* <AppNavigator /> */}
+				<Router/>
 			</SafeAreaView>
 		</SafeAreaProvider>
 	);

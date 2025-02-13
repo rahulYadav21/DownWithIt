@@ -42,7 +42,7 @@ export default function Api() {
 							/>
 						)}
 					/>
-				</ScrollView>
+ 				</ScrollView>
 			</SafeAreaView>
 		</SafeAreaProvider>
 	);

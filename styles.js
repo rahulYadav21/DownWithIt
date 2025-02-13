@@ -81,6 +81,12 @@ const styles = StyleSheet.create({
 		fontSize: 30,
 		textAlign: 'center',
 	},
+	landingPage: {
+		flex: 1, // Ensures it takes the full screen
+		justifyContent: 'center', // Vertically center content
+		alignItems: 'center', // Horizontally center content
+		resizeMode: 'cover',
+	},
 	landingContainer: {
 		justifyContent: 'center',
 		alignItems: 'center',
@@ -92,9 +98,44 @@ const styles = StyleSheet.create({
 		borderBlockColor: 'black',
 		border: 1,
 	},
-	landingButton:{
-		backgroundColor:'red',
-		color:'black',
+	landingButton: {
+		backgroundColor: '#d9252b',
+		borderRadius: 100,
+		paddingVertical: 10,
+	},
+	landingButtonText: {
+		textAlign: 'center',
+		color: 'white',
+		fontWeight: 'bold',
+		fontSize: 15,
+	},
+	dashboardContainer: {
+		backgroundColor: 'gray',
+	},
+	dashboardList: {
+		backgroundColor: 'white',
+		margin: 20,
+		// border: 3,
+		borderColor: 'red',
+	},
+	dataView: {
+		border: 1,
+		padding: 5,
+		// backgroundColor:'white',
+		borderColor: 'black',
+	},
+	dataImage: {
+		height: 400,
+		width: 'auto',
+		justifyContent: 'center',
+		marginVertical: 'auto',
+		resizeMode:'contain'
+	},
+	dataText: {
+		fontSize: 20,
+		padding: 5,
+		paddingVertical: 20,
+		fontWeight: 'bold',
 	},
 });
 
